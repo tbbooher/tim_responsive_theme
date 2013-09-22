@@ -156,22 +156,22 @@ if (!function_exists('responsive_setup')):
 		    )
 	    );
 
-		// if ( function_exists('get_custom_header')) {
+		if ( function_exists('get_custom_header')) {
 			
-  //       add_theme_support('custom-background');
+        add_theme_support('custom-background');
 		
-		// } else {
+		} else {
 		
-		// // < 3.4 Backward Compatibility
+		// < 3.4 Backward Compatibility
 		
-		// *
-  //        * This feature allows users to use custom background for a theme.
-  //        * @see http://codex.wordpress.org/Function_Reference/add_custom_background
-         
+		/**
+         * This feature allows users to use custom background for a theme.
+         * @see http://codex.wordpress.org/Function_Reference/add_custom_background
+         */
 		
-  //       add_custom_background();
+        add_custom_background();
 		
-		// }
+		}
 
 		// WordPress 3.4 >
 		if (function_exists('get_custom_header')) {
